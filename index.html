@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form action="form.html" method="get">
+      <div>
+        <label for="Name">Name</label>
+        <input
+          type="text"
+          name="Name"
+          id="Name"
+          placeholder="John Smith"
+          required
+        />
+      </div>
+      <div>
+        <label for="Age">Age</label>
+        <input
+          type="number"
+          id="Age"
+          name="Age"
+          min="1"
+          max="200"
+          step="1"
+          required
+        />
+      </div>
+      <div>
+        <label for="Email">Email</label>
+        <input
+          type="email"
+          name="Email"
+          id="Email"
+          placeholder="example@123.net"
+          required
+        />
+      </div>
+      <div>Gender</div>
+      <div>
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="Gender" value="male" required />
+      </div>
+      <div>
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="Gender" value="female" />
+      </div>
+      <div>Hobbies</div>
+      <div>
+        <label for="Sports">Sports</label>
+        <input type="checkbox" id="Sports" name="Sports" />
+      </div>
+      <div>
+        <label for="Music">Music</label>
+        <input type="checkbox" id="Music" name="Music" />
+      </div>
+      <div>
+        <label for="Art">Art</label>
+        <input type="checkbox" id="Art" name="Art" />
+      </div>
+      <div>
+        <label for="Reading">Reading</label>
+        <input type="checkbox" id="Reading" name="Reading" />
+      </div>
+      <div>
+        <label for="How you heard about us">How you heard about us</label>
+        <select name="How you heard about us" id="How you heard about us" required>
+          <option value="" label="Select one below"></option>
+          <option value="Through a friend" label="Through a friend"></option>
+          <option value="Online advertisement">Online advertisement</option>
+          <option value="TV advertisement">TV advertisement</option>
+        </select>
+      </div>
+      <div>
+        <select name="Eye Colour" required>
+          <option value="">Please select your eye colour</option>
+          <option value="Blue">Blue</option>
+          <option value="Green">Green</option>
+          <option value="Brown">Brown</option>
+        </select>
+      </div>
+      <div>
+        <textarea
+          name="Message"
+          id="Message"
+          cols="30"
+          rows="10"
+          placeholder="Type your message here"
+          required
+        ></textarea>
+      </div>
+      <button type="submit">Submit</button> <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>
